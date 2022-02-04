@@ -177,3 +177,24 @@ a {
     margin: .7em 0;
     border-color: var(--text-grey)
 }
+
+
+/* Main - button top-fixed */
+
+main .top-fixed {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+main .top-fixed a{
+    border-radius: 25px;
+    color: white;
+    border: solid 2px white;
+    padding: .5rem 3rem;
+    margin-right: 20px;
+}
+
+main .top-fixed a:hover {
+    transform: scale(1.05);
+}

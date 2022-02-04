@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,21 +12,83 @@
 
     <!-- Link - FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-</head>
-<body>
-    <!-- Upgrade button -->
-    <header>
 
+    <!-- Link - GoogleFont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <header class="sidebar">
+
+        <div class="logo">
+            <img src="img/logo.svg" alt="">
+        </div>
+        <div class="buttons">
+
+            <div class="home">
+                <a href="#!"><i class="fas fa-home"></i><span>Home</span></a>
+            </div>
+
+            <div class="search">
+                <a href="#!"> <i class="fas fa-search"></i><span>Search</span>
+                </a>
+            </div>
+            <div class="library">
+                <a href="#!"><img class="library" src="img/libreria.svg" alt="Spotify-Library"><span>La tua
+                        libreria</span></a>
+
+
+            </div>
+        </div>
+        <div class="playlist">
+            <h2>PLAYLIST</h2>
+
+            <div class="new-playlist">
+                <a href="#!">
+                    <i class="fas fa-plus"></i><span id="new-playlist-butt">Crea Playlist</span>
+                </a>
+            </div>
+            <div class="list-playlist">
+                <a href="#!">Nome Playlist</a> <br>
+                <a href="#!">Nome Playlist</a> <br>
+                <a href="#!">Nome Playlist</a> <br>
+                <a href="#!">Nome Playlist</a> <br>
+                <a href="#!">Nome Playlist</a> <br>
+                <a href="#!">Nome Playlist</a> <br>
+                <a href="#!">Nome Playlist</a>
+            </div>
+        </div>
+
+        <div class="sidebar-footer">
+            <a href="#!">
+                <i class="far fa-arrow-alt-circle-down"></i><span>Installa app</span>
+            </a>
+            <hr>
+            <a href="#!"><i class="fas fa-user-circle"></i></a>
+            <span>Cristian Bricicaru</span>
+        </div>
     </header>
 
-    <!-- Main divided in 2 parts: left one (fixed) for user and right one for music -->
+    <!-- Main divided in 2 parts: top one (fixed) and middle one for music -->
     <main>
-        
+        <div class="top-fixed">
+            <a href="#!">Effettua l'upgrage</a>
+        </div>
+        <div class="content">
+
+
+
+        </div>
+
     </main>
 
     <!-- The footer is for the commands  -->
-    <footer>
+    <footer class="commands">
 
     </footer>
 </body>
+
 </html>

@@ -1,0 +1,15 @@
+:root {
+    --grey: #282828;
+    --dark-grey: #141922;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    color: white;
+}

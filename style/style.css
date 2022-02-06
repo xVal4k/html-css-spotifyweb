@@ -198,3 +198,27 @@ main .top-fixed a{
 main .top-fixed a:hover {
     transform: scale(1.05);
 }
+
+
+/* Main - navigation menu */
+
+main .main-nav {
+    line-height: 4rem;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.main-nav a {
+    display: inline-block;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    margin: 0 1em;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+
+/* Main - content */
+

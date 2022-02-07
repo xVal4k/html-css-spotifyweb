@@ -2,7 +2,7 @@
     --grey: #282828;
     --dark-blue: #141922;
     --text-grey: #76797E;
-    --height-orzBar: 80px;
+    --height-orzBar: 100px;
     --width-sidebar: 200px;
 }
 
@@ -42,15 +42,16 @@ main {
     position: absolute;
     top: 0;
     right: 0;
-    width: calc(100vw - 200px);
+    width: calc(100vw - var(--width-sidebar));
     height: calc(100vh - var(--height-orzBar));
+    padding-top: var(--height-orzBar);
     margin-left: 200px;
     overflow-y: auto;
 }
 
 .top-fixed {
-    width: calc(100% - 200px);
-    height: 80px;
+    width: calc(100vw - var(--width-sidebar));
+    height: var(--height-orzBar);
     position: fixed;
     background: #0d1016a1;
     top: 0;
@@ -59,22 +60,31 @@ main {
 }
 
 .content {    
-    margin: 80px 1rem;
+    margin: 1rem;
 }
 
 .commands {
-    height: 80px;
+    height: var(--height-orzBar);
     background: var(--grey);
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
 }
 
 a {
     text-decoration: none;
-    color: var(--text-grey);
+    opacity: .6;
+    color: white;
+}
+
+a:hover {
+    opacity: 1;
 }
 
 
@@ -83,10 +93,6 @@ a {
 .sidebar {
     padding: .5rem .8rem;
     font-size: 14px;
-}
-
-.sidebar a:hover {
-    color: white;
 }
 
 .sidebar .logo {
@@ -106,10 +112,12 @@ a {
 
 /* Sidebar - class buttons */
 
-.buttons .library img {
+.buttons img,
+.sidebar-footer img {
     width: 20px;
     height: 20px;
     margin-right: .5rem;
+    vertical-align: middle;
 }
 
 .buttons .fas {
@@ -128,6 +136,16 @@ a {
 }
 
 .buttons .home {
+    margin-left: -0.8rem;
+    padding-left: .5rem;
+    border-left: solid 3px #ADFF2F;
+}
+
+.buttons .sdb-row:hover a{
+    opacity: 1;
+}
+
+.buttons .sdb-row:active {
     margin-left: -0.8rem;
     padding-left: .5rem;
     border-left: solid 3px #ADFF2F;
@@ -267,7 +285,165 @@ main .content {
     line-height: 2rem;
 }
 
-
 /* Main - Row-bottom */
 
+.row-bottom img {
+    border-radius: 50%;
+}
 
+
+/* Footer */
+
+/* Left Column */
+
+.col-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.col-left img {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.col-left div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.col-left .col-text {
+    margin: 0 .5rem;
+}
+
+.col-text h4 {
+    font-size: 14px;
+    margin-bottom: -6px;
+}
+
+.col-text a {
+    font-size: 12px;
+}
+
+.col-left .col-text a:hover {
+    text-decoration: underline;
+}
+
+.music-buttons {
+    margin-left: 1rem;
+}
+
+.music-buttons a {
+    margin: 0 .5rem;
+}
+
+
+/* Middle Column */
+
+.col-middle {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col-middle .music-buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.col-middle a {
+    font-size: 20px;
+    opacity: 1;
+    vertical-align: middle;
+    margin: 0 1rem;
+}
+
+.col-middle .fa-play-circle {
+    font-size: 32px;
+}
+
+
+.music-bars {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* The try with hr */
+/* .music-bars hr {       
+    display: inline-block;
+    float: left;
+    vertical-align: middle;
+    height: 4px;
+    margin-top: 10px;
+    border: solid 1px transparent;
+}
+
+.current-time {
+    width: 15%;
+    background: rgb(162, 161, 161);
+    border-radius: 10px;
+}
+
+.total-time {
+    width: 65%;
+    background: var(--text-grey);
+    border-radius: 0 10px 10px 0;  
+} */
+
+
+.music-bars .total-time {
+    display: inline-block;
+    vertical-align: middle;
+    height: 4px;
+    width: 80%;
+    background: var(--text-grey);
+    border-radius: 10px;
+    margin: 0 1rem;
+}
+
+.music-bars .current-time {
+    width: 15%;
+    height: 4px;
+    background: rgb(162, 161, 161);
+    border-radius: 10px;
+}
+
+
+
+/* Right Column */
+
+.col-right {    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.col-right a {
+    margin: 0 .5rem;
+}
+
+.col-right .total-time {
+    display: inline-block;
+    vertical-align: middle;
+    height: 4px;
+    width: 120px;
+    background: var(--text-grey);
+    border-radius: 10px;
+    margin-left: .5rem;
+}
+
+.col-right .current-time {
+    width: 20%;
+    height: 4px;
+    background: rgb(162, 161, 161);
+    border-radius: 10px;

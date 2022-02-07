@@ -2,6 +2,8 @@
     --grey: #282828;
     --dark-blue: #141922;
     --text-grey: #76797E;
+    --height-orzBar: 80px;
+    --width-sidebar: 200px;
 }
 
 * {
@@ -11,7 +13,7 @@
 }
 
 html {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: white;
 }
 
@@ -26,10 +28,9 @@ body {
 /* Macro Area */
 
 .sidebar {
-    width: 200px;
-    height: calc(100vh - 80px);
+    width: var(--width-sidebar);
+    height: calc(100vh - var(--height-orzBar));
     background: black;
-    float: left;
     position: fixed;
     top: 0;
     left: 0;
@@ -38,35 +39,37 @@ body {
 }
 
 main {
-    width: calc(100% - 200px);
-    height: calc(100% - 80px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100vw - 200px);
+    height: calc(100vh - var(--height-orzBar));
     margin-left: 200px;
+    overflow-y: auto;
 }
 
 .top-fixed {
-    width: calc(100vw - 200px);
+    width: calc(100% - 200px);
     height: 80px;
     position: fixed;
     background: #0d1016a1;
     top: 0;
     right: 0;
-    z-index: 10;
+    z-index: 999;
 }
 
-.content {
-    margin-top: 80px;
+.content {    
+    margin: 80px 1rem;
 }
 
 .commands {
-    width: 100vw;
     height: 80px;
     background: var(--grey);
     position: fixed;
     bottom: 0;
-    z-index: 9;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    left: 0;
+    right: 0;
+    z-index: 500;
 }
 
 a {
@@ -203,7 +206,7 @@ main .top-fixed a:hover {
 /* Main - navigation menu */
 
 main .main-nav {
-    line-height: 3rem;
+    line-height: 4rem;
     vertical-align: middle;
     text-align: center;
 }
@@ -213,6 +216,7 @@ main .main-nav {
     line-height: 1.5em;
     text-transform: uppercase;
     margin: 0 1em;
+    font-size: 20px;
 }
 
 .main-nav a:hover {
@@ -227,23 +231,24 @@ main .content {
 }
 
 .content h1 {
-    margin: 1em 0;
+    margin-top: 1em;
     font-size: 2rem;
 }
 
 .row {
-    margin-top: 1em;
+    margin-top: 1em; 
+    display: flex;
+    flex-direction: row;
 }
 
 .row .songs {
     display: inline-block;
     width: calc((100% - 6rem) / 6);
-    margin: 0 .4rem;
+    margin: 1rem .5rem;
 }
 
 .songs img {
     width: 100%;
-    height: 100%;
 }
 
 .row h2,
@@ -256,7 +261,13 @@ main .content {
     font-size: 20px;
 }
 
-.row .grey {
+.grey {
     color: var(--text-grey);
     font-size: 14px;
+    line-height: 2rem;
 }
+
+
+/* Main - Row-bottom */
+
+

@@ -23,55 +23,58 @@
     <!-- Sidebar -->
     <header class="sidebar">
 
-        <div class="logo">
-            <img src="img/logo.svg" alt="">
+        <div class="">
+            <div class="logo">
+                <img class="logo-big" src="img/logo.svg" alt="logo">
+                <img class="logo-small" src="img/logo-small.svg" alt="logo icon">
+            </div>
+            <div class="buttons">
+
+                <div class="sdb-row home">
+                    <a href="#!"><img src="img/home.svg" alt="home icon"><span>Home</span></a>
+                </div>
+
+                <div class="sdb-row search">
+                    <a href="#!"><img src="img/search.svg" alt="search icon"><span>Search</span>
+                    </a>
+                </div>
+
+                <div class="sdb-row library">
+                    <a href="#!"><img class="library" src="img/libreria.svg" alt="Spotify-Library"><span>La tua
+                            libreria</span></a>
+                </div>
+
+            </div>
+
+            <div class="playlist">
+                <h2>PLAYLIST</h2>
+
+                <div class="new-playlist">
+                    <a href="#!">
+                        <i class="far fa-plus-square"></i><span id="new-playlist-butt">Crea Playlist</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="list-playlist">
+                <a href="#!">Nome Playlist</a> <br>
+                <a href="#!">Nome Playlist</a> <br>
+                <a href="#!">Nome Playlist</a> <br>
+                <a href="#!">Nome Playlist</a> <br>
+                <a href="#!">Nome Playlist</a> <br>
+                <a href="#!">Nome Playlist</a> <br>
+                <a href="#!">Nome Playlist</a>
+            </div>
         </div>
-
-        <div class="buttons">
-
-            <div class="sdb-row home">
-                <a href="#!"><img src="img/home.svg" alt="home icon"><span>Home</span></a>
-            </div>
-
-            <div class="sdb-row search">
-                <a href="#!"><img src="img/search.svg" alt="search icon"><span>Search</span>
-                </a>
-            </div>
-
-            <div class="sdb-row library">
-                <a href="#!"><img class="library" src="img/libreria.svg" alt="Spotify-Library"><span>La tua
-                        libreria</span></a>
-            </div>
-
-        </div>
-
-        <div class="playlist">
-            <h2>PLAYLIST</h2>
-
-            <div class="new-playlist">
+        <div>
+            <div class="sidebar-footer">
                 <a href="#!">
-                    <i class="far fa-plus-square"></i><span id="new-playlist-butt">Crea Playlist</span>
+                    <img src="img/download.svg" alt="icon download"><span>Installa app</span>
                 </a>
+                <hr>
+                <a href="#!"><i class="fas fa-user-circle"></i></a>
+                <span>Cristian B.</span>
             </div>
-        </div>
-
-        <div class="list-playlist">
-            <a href="#!">Nome Playlist</a> <br>
-            <a href="#!">Nome Playlist</a> <br>
-            <a href="#!">Nome Playlist</a> <br>
-            <a href="#!">Nome Playlist</a> <br>
-            <a href="#!">Nome Playlist</a> <br>
-            <a href="#!">Nome Playlist</a> <br>
-            <a href="#!">Nome Playlist</a>
-        </div>
-
-        <div class="sidebar-footer">
-            <a href="#!">
-                <img src="img/download.svg" alt="icon download"><span>Installa app</span>
-            </a>
-            <hr>
-            <a href="#!"><i class="fas fa-user-circle"></i></a>
-            <span>Cristian B.</span>
         </div>
     </header>
 
@@ -86,12 +89,30 @@
         <div class="content">
 
             <div class="main-nav">
-                <a href="#!">In Evidenza</a>
-                <a href="#!">Podcast</a>
-                <a href="#!">Classifiche</a>
-                <a href="#!">Generi e Mood</a>
-                <a href="#!">Nuove Uscite</a>
-                <a href="#!">Scopri</a>
+                <div class="active">
+                    <a href="#!">In Evidenza</a>
+                    <div class="nav-green-bar act-bar"></div>
+                </div>
+                <div class="active">
+                    <a href="#!">Podcast</a>
+                    <div class="nav-green-bar"></div>
+                </div>
+                <div class="active">
+                    <a href="#!">Classifiche</a>
+                    <div class="nav-green-bar"></div>
+                </div>
+                <div class="active">
+                    <a href="#!">Generi e Mood</a>
+                    <div class="nav-green-bar"></div>
+                </div>
+                <div class="active">
+                    <a href="#!">Nuove Uscite</a>
+                    <div class="nav-green-bar"></div>
+                </div>
+                <div class="active">
+                    <a href="#!">Scopri</a>
+                    <div class="nav-green-bar"></div>
+                </div>
             </div>
 
 
@@ -104,34 +125,82 @@
             <section class="row row-top">
 
                 <div class="songs">
-                    <img src="img/metal_lifting.jpg" alt="Metal Bands poster">
+
+                    <div class="overlay">
+                        <a href="#!"><img src="img/metal_lifting.jpg" alt="Metal Bands poster"></a>
+                        <a href="#!"><i class="far fa-play-circle play-overlay"></i></a>
+                    </div>
+
                     <h2>Heavy Metal</h2>
                     <p class="grey">Subtitle</p>
                 </div>
+
                 <div class="songs">
-                    <img src="img/stranger.jpeg" alt="Stranger Things Poster">
+
+                    <div class="overlay">
+                        <a href="#!"><img src="img/stranger.jpeg" alt="Stranger Things Poster"></a>
+                        <a href="#!"><i class="far fa-play-circle play-overlay"></i></a>
+                    </div>
+
                     <h2>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack</h2>
+
                     <p class="grey">Kyle Dixon & Michael Stein</p>
+
                 </div>
+
                 <div class="songs">
-                    <img src="img/aquietplace.jpeg" alt="A quiet place poster">
+
+                    <div class="overlay">
+                        <a href="#!"><img src="img/aquietplace.jpeg" alt="A quiet place poster"></a>
+                        <a href="#!"><i class="far fa-play-circle play-overlay"></i></a>
+                    </div>
+
+
                     <h2>A quiet place</h2>
+
                     <p class="grey">Subtitle</p>
+
                 </div>
+
                 <div class="songs">
-                    <img src="img/split.jpeg" alt="Split poster">
+
+                    <div class="overlay">
+                        <a href="#!"><img src="img/split.jpeg" alt="Split poster"></a>
+                        <a href="#!"><i class="far fa-play-circle play-overlay"></i></a>
+                    </div>
+
+
                     <h2>Split</h2>
+
                     <p class="grey">Subtitle lore</p>
+
                 </div>
+
                 <div class="songs">
-                    <img src="img/cure.jpeg" alt="A cure for wellness poster">
+
+                    <div class="overlay">                        
+                        <a href="#!"><img src="img/cure.jpeg" alt="A cure for wellness poster"></a>
+                        <a href="#!"><i class="far fa-play-circle play-overlay"></i></a>
+                    </div>
+
                     <h2>A cure for wellness</h2>
+
                     <p class="grey">Subtitle</p>
+
                 </div>
+
                 <div class="songs">
-                    <img src="img/sinister.jpeg" alt="Metal Bands">
+
+                    <div class="overlay">
+                        <a href="#!"><img src="img/sinister.jpeg" alt="Metal Bands"></a>
+                        <a href="#!"><i class="far fa-play-circle play-overlay"></i></a>
+                    </div>
+
+
                     <h2>Sinister</h2>
+
                     <p class="grey">Subtitle</p>
+
                 </div>
 
             </section>
@@ -147,12 +216,25 @@
             <section class="row row-middle">
 
                 <div class="songs">
-                    <img src="img/radar.jpeg" alt="Icon playlist">
+
+                    <div class="overlay">
+                        <a href="#!"><img src="img/radar.jpeg" alt="Icon playlist"></a>
+                        <a href="#!"><i class="far fa-play-circle play-overlay"></i></a>
+                    </div>
+
                     <h2>Release Radar</h2>
+
                 </div>
+
                 <div class="songs">
-                    <img src="img/mixdaily.jpeg" alt="Icon Daily mix">
+
+                    <div class="overlay">
+                        <a href="#!"><img src="img/mixdaily.jpeg" alt="Icon Daily mix"></a>
+                        <a href="#!"><i class="far fa-play-circle play-overlay"></i></a>
+                    </div>
+
                     <h2>Daily Mix 1</h2>
+
                 </div>
 
             </section>
@@ -168,12 +250,26 @@
             <section class="row row-bottom">
 
                 <div class="songs">
-                    <img src="img/youg.jpeg" alt="Icon playlist">
+
+                    <div class="overlay">
+                        <a href="#!"><img src="img/youg.jpeg" alt="Icon playlist"></a>
+                        <a href="#!"><i class="far fa-play-circle play-overlay"></i></a>
+                    </div>
+
+
                     <h2>Lana del Rey</h2>
+
                 </div>
+
                 <div class="songs">
-                    <img src="img/einaudi.jpeg" alt="Icon Daily mix">
+
+                    <div class="overlay">
+                        <a href="#!"><img src="img/einaudi.jpeg" alt="Icon Daily mix"></a>
+                        <a href="#!"><i class="far fa-play-circle play-overlay"></i></a>
+                    </div>
+
                     <h2>Ludovico Einaudi</h2>
+
                 </div>
 
             </section>
@@ -210,10 +306,9 @@
 
             <div class="music-bars">
                 <span class="time0-25">0:25</span>
-                <!-- <hr class="current-time">
-                    <hr class="total-time"> -->
                 <div class="total-time">
                     <div class="current-time"></div>
+                    <div class="time-circle"></div>
                 </div>
                 <span class="time4-35">4:35</span>
             </div>
@@ -226,6 +321,7 @@
             <a href="#!"><i class="fas fa-volume-up"></i></a>
             <div class="total-time">
                 <div class="current-time"></div>
+                <div class="time-circle"></div>
             </div>
         </div>
 
